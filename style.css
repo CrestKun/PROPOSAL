@@ -1,0 +1,53 @@
+html {
+  background: #C1E5D7;
+  width: 100%;
+  height: 100%;
+  font-family: "Quicksand";
+}
+
+.header h1, h2 { margin: 0; }
+.header h1 { color: #666; }
+.number {color: #ccc}
+.type { color: #cea27c; text-shadow: 2px 4px 3px rgba(0, 119, 119,0.3); }
+.social a img { height: 1.5em; }
+
+.description {
+  color: #cea27c;
+  text-align: center;
+}
+
+.content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.surprise {
+  -webkit-animation: surprise linear 2s infinite;
+          animation: surprise linear 2s infinite;
+}
+
+#right_bird, #left_bird {
+    transform-origin: 50% 0;
+    -webkit-animation: swing 4s ease-in-out forwards infinite;
+            animation: swing 4s ease-in-out forwards infinite;
+}
+
+@-webkit-keyframes surprise {
+	50% { opacity: .1; } 
+	0%, 100% { opacity: 1; }
+}
+
+@keyframes surprise {
+	50% { opacity: .1; } 
+	0%, 100% { opacity: 1; }
+}
+@-webkit-keyframes swing {
+    0%{transform: rotate(5deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(5deg);}
+}
+@keyframes swing {
+    0%{transform: rotate(5deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(5deg);}
+}
